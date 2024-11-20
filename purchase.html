@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Purchase</title>
+    <link rel="stylesheet" href="purchase.css">
+</head>
+<body>
+    <div class="purchase-container">
+        
+
+        <!-- Purchase Form -->
+        <form id="purchaseForm">
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required min="1">
+            </div>
+            <button type="submit" class="buy-now-btn">Buy Now</button>
+        </form>
+
+        <!-- Confirmation Message -->
+        <div id="confirmationMessage" class="hidden">
+            <h2>Purchase Successful!</h2>
+            <p>Your purchase has been processed. A confirmation has been sent to your email.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
